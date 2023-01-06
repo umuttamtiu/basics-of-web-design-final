@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admont-manastırı-kütüphanesi</title>
+    <title>balıkesir-il-halk-kütüphanesi</title>
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +18,16 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    box-sizing: border-box;            /* bu nokta çoook önemli normalde burada backgrpund color yok ama ben biraz değiştirmek istedim ve en alt kısma margin ekledim biraz ve kenarlardan boşluk bıraktım sonra boşlukları renkli yapmak için de nuradan background color yaptıım byee*/
-    /* background-color: #573914b2; */
+    box-sizing: border-box;  
+    background-color: #3a250bb2;       /* bu nokta çoook önemli normalde burada backgrpund color yok ama ben biraz değiştirmek istedim ve en alt kısma margin ekledim biraz ve kenarlardan boşluk bıraktım sonra boşlukları renkli yapmak için de nuradan background color yaptıım byee*/
+   
 }
 
 
+
+
 .hero{
-    width: 100%;
-    background-color: rgb(194, 136, 55);
+    width: 100%; 
     
 }
 
@@ -146,10 +148,10 @@ margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM Y
     color: bisque;
 }
 
-
-.bir .about-text h2{
-    color: rgb(52, 37, 18);
+.bir .about-text h2 span{
+    color: rgb(202, 5, 5);
 }
+
 
 .bir .about-text h5{
     color: rgb(179, 174, 168);
@@ -174,6 +176,7 @@ margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM Y
 .iki .main img{
     width: 400px;
     height: auto;
+    border-radius: 300px;
     margin-right: 30px;
     margin-top: 30px;
     margin-left: 90px;
@@ -203,13 +206,16 @@ margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM Y
    
     height: auto;
     max-width: 100%;
-    
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
     padding: 20px 80px;
     display: flex;  
     justify-content: space-between;
     align-items: center;
     background-color: rgb(113, 102, 89);                /* BURASI DA ÇOK KARIŞTOOO */ 
-    
+    border-radius: 40px;
 }
 
 .haritam h1{
@@ -218,8 +224,6 @@ margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM Y
     text-decoration: none;
     text-transform: uppercase;
     color: rgb(56, 15, 15);
-    text-shadow: 5px 5px 5px rgb(58, 42, 27);
-    
 }
 
 
@@ -227,64 +231,18 @@ margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM Y
     border-radius: 50px;
 }
 
-.about-text .birinci-paragraf{
+.about-text h3{
+    font-size: 30px;
     margin-bottom: 30px;
-}
-
-
-footer{
-    background: rgb(194, 136, 55);
-    width: 100%;
-    padding: 100px;
-    text-align: center;
-}
-
-footer h5{
-    color: bisque;
-    font-size:35px ;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 15px;
-}
-
-footer p{
-    color: antiquewhite;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-footer .socials{
-    background-color: #d25422;
-    font-size: 60px;
-    margin:35px;
+    color: rgb(232, 211, 183);
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    border-radius: 30px;
-}
-footer .socials a{
-    color: purple;  
-    background-color: #d0b51a;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 15px;                                   /*padding iç boşluk margin dış boşluk*/
-    border-radius: 30px;
-    transition: .5s;                
-}
-
-footer .socials a:hover{
-    background-color: transparent;
-    border: 2px solid transparent;
-    cursor: crosshair;
+    justify-content: flex-end;
 }
 
 
-footer .end{
-    color: #000000;
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 23px;
-}
+
+
+
 </style>
 
 
@@ -316,14 +274,22 @@ footer .end{
         <section class="bir">
             <div class="main">
                 <div class="about-text"> 
-                    <h2>BEİTOU KÜTÜPHANESİ</h2>
+                    <h2>BALIKESİR İL HALK KÜTÜPHANESİ</h2>
+                    <H3>(DÜNYANIN SEKİZİNCİ HARİKASI)</H3>
                         <Hr>
                         <Br>
                 
-                    <h4>YEŞİLLER İÇİNDE KİTAPLAR, BEİTOU</h4>
-                    <p class="birinci-paragraf">Admond Manastırı, Avusturya'da Enns Nehri üzerindeki Admond kasabasında bulunan bir Benedikten Manastırıdır. Avusturya'da ayakta kalan en eski manastırlardan biridir. Aynı zamanda dünyadaki en büyük manastır kütüphanelerinden birine sahiptir. Manastır, Salzburg'dan gelen Benedikten rahipleri tarafından 1074'de inşa edilmesine rağmen, Barok stilindeki kütüphane ancak 1776 yılında tamamlanmıştır. Kütüphane üç bölüm halindedir. 70 metre boyunda, 14 metre genişliğinde ve 11 metre yüksekliğindedir. Tavanlar, Bartolomeo Altomonte tarafından yapılmış muhtelif fresklerle süslenmiştir. Kütüphane ve heykeller Barok heykeltıraş Josef Stammel tarafından yapılmıştır. Kütüphanede 200 bin kitap bulunmaktadır. Bunların arasında 1.400 elyazması (en eskisi 8. Yüzyıla dayanan) ve 530 incunabula (15. yüzyıldan evvel yazılmış kitap) nadir eser bulunmaktadır. Bu kütüphane 19. asrın başlarından itibaren, dünyanın 8'nci harikası olarak da adlandırılmaktadır.
-                        Adres : Kirchplatz 1, 8911, Admont, Avusturya</p>
-                <p class="ikinci-paragraf">Dünyaca ünlü Admont kütüphanesi, manastır binasının doğu kanadında yer almaktadır. Güney kanadın birinci katındaki Müzeden girilir. 70 metre uzunluğunda, 14 metre genişliğinde ve 11 metre yüksekliğindedir. Merkezi kubbede maksimum 12,7 metre yüksekliğe ulaşır. Bu ölçüler bu odayı dünyanın en büyük manastır kütüphanesi yapar.</p></p>
+                    <h4>BALIKESİR İL HALK KÜTÜPHANESİ TARİHÇESİ</h4>
+                    <p> Balıkesir İl Halk Kütüphanesi, 1901 yılında o dönemin Karesi Sancağı Mutasarrıfı Ömer Âli Bey tarafından kurulmuş ve Anafartalar Caddesi eski belediye binası (Şimdiki Kuvâ-yı Milliye Müzesi) bitişiğindeki Hacı Ali Camii avlusunda, o zamanın medrese odalarından birisinde, birkaç dolaplık küçük bir kütüphane olarak faaliyete geçmiştir. Zamanla mevcut kitaplar okuyucuların büyük ilgisi nedeniyle ihtiyaca cevap vermemeye başlamış; bu durum karşısında Ömer Ali Bey, kütüphane için müstakil bir bina yaptırmak ve daha fazla sayıda kitap temin etmek amacıyla, şehrin ileri gelenleriyle görüşmüş ve yapılan çalışmalar sonunda kütüphane, Anafartalar Caddesi Hacı Ali Cami avlusunda bulunan günümüzde de Yeşilay Derneği Hamidiye Kütüphanesi adını taşıyan binada okuyuculara hizmet vermeye başlamıştır.
+                         
+                        Mutasarrıf Ömer Âli Bey tarafından, 105 yıl önce dönemin Osmanlı Padişahı Sultan II.Abdülhamid Han’dan izin alınmak suretiyle, “Hamidiye  Kütüphanesi” adı ile kurulan kütüphane, 1908 yılından itibaren “Maarif  Kütüphanesi”  ve 1922 yılından itibaren de “Vatan  Kütüphanesi” adlarıyla anılmıştır.Kütüphanenin adı, VII. Milli Eğitim Şûrâsı kararlarına dayanılarak, 01 Haziran 1962 gün ve 262.1-3165 sayılı emirle de “İl Halk Kütüphanesi Müdürlüğü” olarak değiştirilmiştir. Kütüphane son olarak 02 Şubat 2009 tarihli ve 601-20634 sayılı Makam Onayı ile "Mutasarrıf Ömer Âli Bey İl Halk Kütüphanesi" adını almıştır. 26.09.2011 tarih ve 28037 sayılı Resmi Gazete’de yayımlanarak yürülüğe giren ve 01.08.2011 tarih ve 2011/2132 sayılı Bakanlar Kurulu Kararıyla kurulan, Balıkesir Mutasarrıf Ömer Âli Bey Yazma Eserler Kütüphanesi Müdürlüğü ile aynı adı taşıması karışılığa neden olduğundan, Bakanlık Makamı’nın 25.09.2012 tarihli ve 205735 sayılı Onayı ile “Mutasarrıf Ömer Âli Bey” ismi kaldırılarak Balıkesir İl Halk Kütüphanesi Müdürlüğü adını almıştır.
+                        İl Halk Kütüphanesi, daha sonra İl Özel İdare Müdürlüğü’ne ait Anafartalar caddesi üzerindeki binada 1938 yılından itibaren hizmet vermekte iken, kütüphane binası yerine iş hanı yapılacağından, 08 Temmuz 1987 tarihinde İl Özel İdare Müdürlüğü Hizmet Binası kompleksinde  bulunan  (Yeni Özel İdare binasının bulunduğu yer), daha önceleri Karesi Vergi Dairesi olarak kullanılan bölüme taşınmıştır. 15 Ocak 1988 tarihinden, 08 Ocak 1994 tarihine kadar okuyucularına bu binada hizmet veren kütüphane, Eski Kuyumcular Mahallesi, Salih Tozan Caddesi’ndeki hizmet binasının da İl Genel Meclisi’nce İl Özel İdare Müdürlüğü İş Merkezi ve Hizmet Binası (ÖZ MERKEZ) olarak yapılmak üzere yıkılmasına karar verilmesi üzerine, 08 Ocak 1994 tarihinden itibaren boşaltılmış ve geçici olarak kütüphaneye tahsis edilen, Bahçelievler Mahallesi Kıralı Sokak’ta bulunan mülkiyeti Balıkesir Belediyesi ‘ne ait; (64) m2 ve (l52) m2  alanında iki salondan oluşan yeni hizmet binasına taşınmıştır.
+                         
+                        Bugüne kadar dört değişik binada hizmet veren Balıkesir İl Halk Kütüphanesi Özelleştirme Yüksek Kurulu'nun 07.04.2009 tarih ve 2004/26 sayılı kararı ile, Dinkçiler Mahallesinde bulunan TEKEL Yaprak Tütün İşletme Müdürlüğü Hizmet Binası'nın, İl Halk Kütüphanesi olarak kullanılmak üzere Bakanlığımıza tahsis edilmesi üzerine, gerekli onarım ve değişiklikler tamamlandıktan sonra bu binaya taşınmıştır. Yeni hizmet binasının resmi açılış töreni 04.04.2008 tarihinde yapılmıştır.
+                        
+                        Bütün bu bina değişikliklerinden sonra Balıkesir’e yeni bir kütüphane binası kazandırmak amacıyla yapılan çalışmalar sonrasında 14.06.2017 tarihinden itibaren geçici olarak Kasaplar Mahallesi Bigadiç Cadddesi Akyar Sokak No:1/4’te bulunan Sağlık Bakanlığı’na bağlı eski diyaliz merkezinde hizmet vermeye başlamıştır.
+                        </p>
+                
                 </div>
             
             </div>
@@ -342,9 +308,8 @@ footer .end{
 <div class="main2">
     <h1>DÜNYANIN KİTAP MERKEZİ</h1>
     <p>Balıkesir İl Halk Kütüphanesi, Kültür ve Turizm Bakanlığınca yayınlanan 2006 Yılı Kültür Envanterindeki verilere göre “Mevcut kitap sayısı açısından”, 21 Haziran 1934 tarih ve 2527 Sayılı Basma Yazı ve Resimleri Derleme Kanunu” gereğince derleme nüshası alan Ankara Adnan Ötüken İl Halk Kütüphanesi’nden sonra 72.236 adet kitap ile, 81 İl Halk Kütüphanesi arasında 2. sırada gelmektedir.
-        Yine 2006 Yılı Kültür Envanteri verilerine göre “İl Geneli” hesap edilerek yapılan sıralamada, Balıkesir İli 347.003 adet kitapla 81 İl arasında; İstanbul, Ankara, Konya, Nevşehir, Isparta ve İzmir İllerinden sonra 7.nci sırayı almıştır.
-    <br>
-    <p></p>
+        Yine 2006 Yılı Kültür Envanteri verilerine göre “İl Geneli” hesap edilerek yapılan sıralamada, Balıkesir İli 347.003 adet kitapla 81 İl arasında; İstanbul, Ankara, Konya, Nevşehir, Isparta ve İzmir İllerinden sonra 7.nci sırayı almıştır.</p>
+
 </div>
 
 
@@ -352,23 +317,11 @@ footer .end{
   </section>
 
   <div class="haritam">
-    <h1>ADMONT MANASTIRI KÜTÜPHANESİ<br>NEREDE?</h1>
-    <iframe class="haritamm" src="https://www.google.com/maps/d/u/0/embed?mid=1byA0qXJwka9DirOka83ZAINpAvJh1cY&ehbc=2E312F" width="640" height="480"></iframe>
-  </div>
+    <h1>NASIL GİDERİZ , <br>DÜNYANIN MERKEZ KÜTÜPHANESİNE?</h1>
+    <iframe  class="haritamm" src="https://www.google.com/maps/d/u/0/embed?mid=1eSFOy_4D9JIUqwW3PePlZIUbJlfe8ds&ehbc=2E312F" width="640" height="480"></iframe>
 
-<!--FOOTER-->
-<footer>
-    <h5>Dünya Kitaplığı</h5>
-    <p class="sondanbironce">Dünya Kitaplığı, kitap alanında dünyanın en'lerini dünyanın her yerinden ekranlarınıza getiren sanat tutkunu bir internet sitesidir </p>
-    <div class="socials">
-        <a href=""><i class="fa-brands fa-meta"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    <p class="end">BALIKESİR'li Umut TAMTI tarafından yapılmıştır</p>
-</footer>
+    
+  </div>
 
 
 
