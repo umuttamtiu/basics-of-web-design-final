@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON KİŞİYDİLER</title>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;          /* bunu da bilmiyorum araştır bunu */   /*murat hoca biraz anlattı ama meeehhh*/
+}
+
+.hero {
+    height: 3100px;
+    width: 100%;
+    background: rgb(63, 52, 38);
+    background-size: cover;
+    background-position: center;  
+}
+
+nav {
+    display: flex;             /*display türlerini kesinlikle araştır*/     /*flex yatayda heralde*/
+    align-items: center;          /* align items kesinlike araştır*/      /* itemleri sıralama*/
+    justify-content: space-between;   /* justify content kesinlike araştır*/
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;                                                         
+
+}
+
+.logo{
+    color: rgb(24, 158, 113);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:crosshair;                   /* (NORMALDE BU POİNTERDI)cursor nedir araştır türleri nedir araştır önemli gibi*/
+}
+
+
+/*normalde burada sadece span vardı ama ben ilerde karişmasın diye div nav span yazarak nerede olduğunu belirttim umarım doğrudur*/
+div nav span{
+    color:rgb(163, 9, 9)
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 13px;             /* font size ben ekledim normalde yoktu*/
+
+}
+nav ul li a {
+    color: bisque;
+    text-decoration:none;         /* bunu hiç yapmamayı denedim ama hiç yapmazsam altta bir çizgi oluyo hoş durmuyo none yaptığımda normal yazı oluyor yani iyi*/
+    font-weight: bold;
+    text-transform: capitalize;     /*capitalize araştır önemli gibi duruyor çok duydum*/
+
+    
+}
+nav ul li a:hover{
+    color: rgb(187, 14, 14);
+    transition: .5s;
+}
+
+.btn{
+    background-color: brown;
+    color: rgb(246, 203, 151);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    transition:.4s;                /* burası da normalde  transition: transform .4s; idi ama hiçbir etki etmediği için kaldırdım*/
+
+    /* normalde burada     border: 2px solid transparent;    kodu vardı ama ben gerekszi bulduğum için sildim*/
+}
+
+.btn:hover{
+    transform: scale(1.2);            /* anladım gibi ama sen yine de araştır tekrardan */
+}
+
+.main{
+    
+    width: 70%;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 225px;
+    
+}
+
+.main h1{
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px bisque;
+    margin-bottom: 20px;
+    color: rgb(101, 96, 96);
+}
+
+.main h3{
+    font-size: 37px;
+    text-decoration: none;
+    margin-bottom: 45px;
+    color: bisque;
+}
+
+.main p{
+    text-align: left;
+    font-size: 24px;
+    color: rgb(222, 207, 189);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main img{
+    height: 400px;
+    width: 340px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ozet{
+
+    width: 80%;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 125px;
+    background: rgb(94, 83, 83);
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 6px solid bisque;
+}
+
+
+.son{
+    margin-top: 50px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <!--hero section starts-->
+    <div class="hero">
+        
+        <nav>
+            
+            <h2 class="logo">DÜNYA <span>KİTAPLIĞI</span></h2>
+           
+            <ul>
+                <li><a href="index99.html">ANASAYFA</a></li>
+                <li><a href="kütüphaneler-page.html">KÜTÜPHANELER</a></li>
+                <li><a href="kitaplar.html">KİTAPLAR</a></li>
+                <li><a href="yazarlar.html">YAZARLAR</a></li>                         <!-- bir navbar ekle ve alta kyamsını sağlagaliba stick ile yapacaksın onu -->
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="iletişim.html">İLETİŞİM</a></li>
+            </ul>
+          
+            <a href="bize-katil.html" class="btn">BİZE KATIL</a>
+            
+        </nav>
+
+    <div class="main">
+    <h1>ON KİŞİYDİLER</h1>
+    <h3>Agatha Christie</h3>
+    <p>On Kişiydiler veya eski adıyla On Küçük Zenci, İngiliz yazar Agatha Christie'nin yazdığı gizem romanı. Christie, On Kişiydiler'i "yazdığı en zor kitap" olarak tanımlar. Kitap ilk olarak 6 Kasım 1939'da İngiltere'de Ten Little Niggers (On Küçük Zenci) adıyla yayımladı.[1] Kitabın adı, romanda önemli yer tutan bir çocuk şiirinden geliyordu.[2][3] Ancak Amerikan kültüründe "zenci" kelimesi ırkçı ve onur kırıcı bir kelime olarak görüldüğünden kitabın Amerika'daki ilk baskısı And Then There Were None adıyla yayımlandı. Bu ad, aynı şiirin son dizesinden bir alıntıydı.[4] Amerika'da daha sonraki baskılar aynı isimle devam etse de 1964-1986 yılları arasında Pocket Books tarafından Ten Little Indians (On Küçük Kızılderili) adıyla da yayımlandı. İngiltere'de ise 1985'ten itibaren And Then There Were None adına geçildi.[5] İlerleyen yıllarda kitabın çevirilerinde de benzer değişiklikler yaşandı. Kitabın Türkçe baskıları Altın Kitaplar tarafından On Küçük Zenci adıyla yayımlanıyordu, ancak 2021'de Agatha Christie'nin ailesinin ve ajansının kararıyla romanın kırıcı dilinden arındırıldığı ve bundan sonra On Kişiydiler adıyla yayımlanacağı duyuruldu.[6][7]
+
+        Kitap, 100 milyondan fazla satışla dünyanın en çok satan gizem romanı ve dünyanın en çok satan kitaplarından biridir.[8]
+        
+        Çok sayıda film, radyo, tiyatro ve televizyon uyarlaması bulunmaktadır.</p>
+       
+       <img src="9991.jpg" alt="iki">
+        <p>Konusu
+            Geçmişte verdikleri kararları, hataları ya da ihmalkârlıkları nedeniyle insanların ölümlerine yol açmış on kişi, bunu sır olarak saklamaktadır. Bu kişiler, günün birinde Una Nancy Owen adında birinden bir mektup alırlar ve tatil amacıyla Zenci Adası'ndaki gösterişli bir malikaneye davet edilirler. Konuklar, Owen adındaki kişiyle nerede tanıştıklarını bir türlü hatırlayamazlar ama söz konusu daveti ücretsiz bir tatil fırsatı olarak görürler ve teklifi kabul ederler. Ancak adaya vardıklarında onları bir sürpriz beklemektedir: Ev sahibi ortalarda yoktur. Adada onları bekleyen yalnızca karı koca olan iki görevli vardır. İşin diğer bir ilginç yanı bu çiftin de adanın sahibini hiç görmemiş olmalarıdır.
+            
+            Aynı günün akşamı, akşam yemeğinin ardından misafirler aynı odada sohbet ederken gramofona konulmuş olan plak çalmaya başlar ve ev sahibinin sesinden geçmişte neden oldukları ölümlerden dolayı suçlu bulundukları ifade edilir. Plak bir yargıcın mahkemede konuşması şeklinde çalmıştır. Bu olay ortamı bir anda gerer ve konuklar, kendilerine bir eşek şakası yapıldığını düşünerek ertesi gün adadan ayrılmaya karar verirler. Ancak o gece başlayan ölümler adada kaosu ve korkuyu beraberinde getirecektir. Ertesi sabah gelmesi beklenen ve her gün yiyecek ve gerekli şeyleri getirdiği uşak tarafından belirtilen bot ertesi sabah gelmez. Sonraki günler de gelmeyecektir. Artık adaya davet edilen misafirler mahsur kalmışlardır ve bir yandan da zeki katili bulmaya çalışırken diğer yandan katilin kapanına yakalanmamaya çalışacaklardır.</p>
+
+            <p class="son">Evde bulunan odalarda bir çocuk şiiri asılıdır:
+
+                On küçük zenci yemeğe gitti,
+                
+                Birisi kendisini boğdu ve kaldı dokuz.
+                
+                Dokuz küçük zenci çok geç kalktı,
+                
+                biri uyuyakaldı, kaldı sekiz.
+                
+                Sekiz küçük zenci Devon'da geziye çıktı,
+                
+                Biri kayboldu, kaldı yedi.
+                
+                Yedi küçük zenci odun kırdı,
+                
+                biri kendisini kesti, kaldı altı.
+                
+                Altı küçük zenci kovanla oynadı,
+                
+                bir balarısı, içlerinden birini soktu, kaldı beş.
+                
+                Beş küçük zenci mahkemeye gitti,
+                
+                Biri idam cezası aldı, kaldı dört.
+                
+                Dört küçük zenci denize gitti,
+                
+                Birini balık yuttu, kaldı üç.
+                
+                Üç küçük zenci hayvanat bahçesine gitti,
+                
+                Birine ayı sarıldı, kaldı iki.
+                
+                İki küçük zenci güneş altında oturdu,
+                
+                Biri güneşte kızardı, kaldı bir.
+                
+                Bir küçük Kızılderili tek başına kaldı.
+                
+                Gidip kendisini astı ve hiçbiri kalmadı.</p>
+    <div>
+
+
+
+
+        <div class="ozet">
+
+<h2>ON KİŞİYDİLER - Genel Özet</h2>
+<p>En popüler kitaplar arasında yer alan On Küçük Zenci, en iyi polisiye romanlarından biridir. On kişi, geçmişte verdikleri kararlar yüzünden insanların ölümüne sebep olmuşlardır ve bunu sır gibi saklarlar. Zenci Adası; Devon sahilleri yakınında ve üzerinde modern bir köşk olan bir yerdir. Sahibi Amerikalı bir milyoner olsada daha sonra Owen adında sadece isim üzerinde var olan ama aslen varlığından bihaber olunan biri tarafından satın alınır. Farklı nedenlerle adaya çağrılan on kişi içerisinde hiç kimse ev sahibi U. N. Owen’i daha önce görmemiştir; uşak ve eşi de dâhil… Daha ilk gece evde tuhaf şeyler olmaya başlar. Anîden çalışmaya başlayan bir gramafon hepsini bir cinayetle suçlamaktadır. Gruptakiler her ne kadar itiraf etmekten çekinseler de bu cinayetleri işlemişlerdir. Her birinin odasında oturma odasında mutfakta da garip bir tekerleme yazılıdır. Köşkün yemek odasında ise 10 tane cam biblo bulunmaktadır. Adada mahsur kalan bu insanlar sırlarını birbirlerine anlatınca tek tek ölmeye başlarlar. İlk gece Tony Marston ölür. Tıpkı tekerlemedeki gibi içki içerken anîden yere yığılmıştır. Masanın üzerindeki zenci heykellerinin sayısı da dokuza düşmüştür. Ölüm korkusuyla tüm sırlarını döken bu kişiler, aslında bir şekilde geçmişte birbirleriyle bir ilişki içindedir. Neden orada olduklarını ve katilin amacının ne olduğunu çözmeye çalışırlar tabii öncesinde katilin kim olduğunu da. Bunlar çalışırken katil de boş durmaz elbette, biblolar git gide azalır.
+
+    </p>
+        </div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bünyemizde çalışanlar</title>
+    <style>
+        body{
+            background-color: rgb(166, 149, 134); 
+        }
+        table{
+                border: 12px solid rgb(255, 255, 255);
+                /* border-collapse: collapse;      hücreler arası boşluk bırakmamak için*/
+                width: 92%;
+                margin-left: 60px;
+        }
+
+        th, td{
+            border: 1px solid rgb(71, 70, 70);
+            padding: 10px;
+            
+        }
+
+        th{
+             background-color: bisque; 
+             color: brown;
+        }
+td{
+        text-transform: capitalize;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+        tr{
+             transition: .9s;
+             cursor:pointer;
+             
+        }
+
+        tr:hover{
+             background-color: rgb(200, 129, 23);
+             color: bisque;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Adı</th>
+            <th>Soyadı</th>
+            <th>Şehir</th>
+            <th>departman</th>
+        </tr>
+
+        <tr>
+            <td>merve</td>
+            <td>aksoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>genel müdür</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+        <tr>
+            <td>umut</td>
+            <td>tamtı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>aslı</td>
+            <td>büyükova</td>
+            <td class="buyuk">diyarbakır</td>
+            <td>müşteri hizmetleri</td>
+        </tr>
+
+        <tr>
+            <td>can</td>
+            <td>taşlı</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>murat</td>
+            <td>beyaz</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>back-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ümit</td>
+            <td>elmas</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>betül</td>
+            <td>düzen</td>
+            <td class="buyuk">istanbul</td>
+            <td>front-end geliştirme</td>
+        </tr>
+
+        <tr>
+            <td>ahmet</td>
+            <td>koç</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>mehmet</td>
+            <td>ersoy</td>
+            <td class="buyuk">BALIKESİR</td>
+            <td>yönetim</td>
+        </tr>
+
+        <tr>
+            <td>eren</td>
+            <td>şerif</td>
+            <td class="buyuk">mersin</td>
+            <td>tasarım</td>
+        </tr>
+
+    </table>
+</body>
+</html>

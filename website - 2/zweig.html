@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEFAN ZWEİG</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--buraya css i internal olarak ekle-->
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;            /* bu nokta çoook önemli normalde burada backgrpund color yok ama ben biraz değiştirmek istedim ve en alt kısma margin ekledim biraz ve kenarlardan boşluk bıraktım sonra boşlukları renkli yapmak için de nuradan background color yaptıım byee*/
+    /* background-color: #573914b2; */
+}
+
+
+.hero{
+    width: 100%;
+    background-color: rgb(34, 103, 0);
+    
+}
+
+nav{
+    
+    display: flex;             /*display türlerini kesinlikle araştır*/     
+    align-items: center;          /* align items kesinlike araştır*/      /* itemleri sıralama*/
+    justify-content: space-between;   /* justify content kesinlike araştır*/
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;                                                         
+
+}
+
+.logo{
+    color: rgb(24, 158, 113);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:crosshair;                   
+}
+
+
+/*normalde burada sadece span vardı ama ben ilerde karişmasın diye div nav span yazarak nerede olduğunu belirttim umarım doğrudur*/
+div nav span{
+    color:rgb(163, 9, 9)
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 13px;             /* font size ben ekledim normalde yoktu*/
+
+}
+nav ul li a {
+    color: bisque;
+    text-decoration:none;         /* bunu hiç yapmamayı denedim ama hiç yapmazsam altta bir çizgi oluyo hoş durmuyo none yaptığımda normal yazı oluyor yani iyi*/
+    font-weight: bold;
+    text-transform: capitalize;     /*capitalize araştır önemli gibi duruyor çok duydum*/
+
+    
+}
+nav ul li a:hover{
+    color: rgb(187, 14, 14);
+    transition: .5s;
+}
+
+.btn{
+    background-color: brown;
+    color: rgb(246, 203, 151);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    transition:.4s;                /* burası da normalde  transition: transform .4s; idi ama hiçbir etki etmediği için kaldırdım*/
+
+    /* normalde burada     border: 2px solid transparent;    kodu vardı ama ben gerekszi bulduğum için sildim*/
+}
+
+.btn:hover{
+    transform: scale(1.2);            /* anladım gibi ama sen yine de araştır tekrardan */
+}
+
+
+
+.bir{
+    width:100%;
+    padding: 145px 0px;                            /*  birinci sayı üstten ikinci sayı soldan*/
+    
+}
+
+.bir img{
+    border-radius: 65px;
+    height: auto;                                   /* BURAADA KENDİ KENDİME ÇOK ÖNEMLİ BİR BİLİGİ ÖĞRENDİM BİRİNİ AUTO YAPIP BİRİİNİ KENDİN SEÇERSEN RESİM BOZULMADAN BİRİNE GÖRE BÜYÜYOR*/
+    width: 550px; 
+} 
+
+.about-text li span{
+    font-size: 25px;
+    color: bisque;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bir .main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;                   /* BURASI DA ÇOK KARIŞTOOO */ 
+
+}
+
+.bir .about-text h2{
+color: rgb(195, 165, 128);
+font-size: 75px;
+text-transform: capitalize;    
+margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM YAZI KÜÇÜK HARF , UPPERCASE TÜM YAZI BÜYÜK HARF ,CAPİTALİZE SADECE BAŞI BÜYÜK DİĞERLEİ KÜÇÜK */
+
+}
+
+.about-text h4{
+    color:  rgb(41, 38, 38);
+    background-color: rgb(150, 153, 152);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+    padding: 20px 15px;
+}
+
+.about-text p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px; 
+    color: bisque;
+}
+
+.bir .about-text h2{
+    color: rgb(73, 52, 22);
+}
+
+
+.bir .about-text h5{
+    color: rgb(179, 174, 168);
+    font-size: 23px;
+    text-transform: capitalize;    
+    margin-bottom: 20px;                      
+    }
+
+
+.iki .main{
+    
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;  
+    background-color: bisque;                 /* BURASI DA ÇOK KARIŞTOOO */ 
+
+}
+
+.iki .main img{
+    width: 400px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+.main2 h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.main2 p{
+    color: rgba(0, 0, 0, 0.518);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.main2{
+    margin-right: 30px;
+}
+
+.haritam{
+   
+    height: auto;
+    max-width: 100%;
+    
+    padding: 20px 80px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(113, 102, 89);                /* BURASI DA ÇOK KARIŞTOOO */ 
+    
+}
+
+.haritam h1{
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(56, 15, 15);
+    text-shadow: 5px 5px 5px rgb(58, 42, 27);
+    
+}
+
+
+.haritam .haritamm{
+    border-radius: 50px;
+}
+
+.about-text .birinci-paragraf{
+    margin-bottom: 30px;
+}
+
+
+footer{
+    background: rgb(34, 103, 0);
+    width: 100%;
+    padding: 100px;
+    text-align: center;
+}
+
+footer h5{
+    color: bisque;
+    font-size:35px ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+
+footer p{
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer .socials{
+    background-color: #d25422;
+    font-size: 60px;
+    margin:35px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 30px;
+}
+footer .socials a{
+    color: purple;  
+    background-color: #d0b51a;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 15px;                                   /*padding iç boşluk margin dış boşluk*/
+    border-radius: 30px;
+    transition: .5s;                
+}
+
+footer .socials a:hover{
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: crosshair;
+}
+
+
+footer .end{
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 23px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <!--hero section starts-->
+    <div class="hero">
+        
+        <nav class="menu">
+            
+            <h2 class="logo">DÜNYA <span>KİTAPLIĞI</span></h2>
+           
+            <ul>
+                <li><a href="index99.html">ANASAYFA</a></li>
+                <li><a href="kütüphaneler-page.html">KÜTÜPHANELER</a></li>
+                <li><a href="kitaplar.html">KİTAPLAR</a></li>
+                <li><a href="yazarlar.html">YAZARLAR</a></li>                         <!-- bir navbar ekle ve alta kyamsını sağlagaliba stick ile yapacaksın onu -->
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="iletişim.html">İLETİŞİM</a></li>
+            </ul>
+          
+            <a href="bize-katil.html" class="btn">BİZE KATIL</a>
+            
+        </nav>
+
+
+        <section class="bir">
+            <div class="main">
+                <div class="about-text"> 
+                    <h2>STEFAN ZWEİG</h2>
+                        <Hr>
+                        <Br>
+                
+                    <h4>Avusturyalı Büyük Zweig</h4>
+                    <p class="birinci-paragraf">Stefan Zweig
+                        Stefan Zweig 1881 yılında Viyana, Avusturya’da dünyaya gelmiştir. Oyun yazarı, romancı, gazeteci ve biyografi yazarıdır. Babası varlıklı bir sanayici olan Stefan küçük yaşlardan itibaren edebiyat, kültür alanında iyi bir eğitim görmüş Latince, Fransızca, İngilizce, Yunanca dillerini iyi şekilde konuşmaktadır.
+                        
+                        İlk şiirlerini lise yıllarında yazdı. Hugo Von ve Paul Verlaine şiirlerini Almanya ’caya çevirdi. 1.Dünya Savaşında gönüllü olarak Viyana’da savaş karargâhında Arşiv Memuru olarak çalıştı. Savaş bittikten sonra Avusturya’ya döndü Salzburg’a yerleşerek Frederike Von Winternit ile evlendi. 
+                        
+                        Burada yaklaşık 20 yıl kaldı. Burada geçirdiği yıllar en verimli yıllarıydı yazarın. İnsanlarla güzel dostluklar kurdu ve bu dönemde edebiyatı doruklara kadar çıkardı. 
+                        
+                        Salzburg’da geçen senelerinde Stefan Zweig Avrupa’nın düşünsel birliğinde ağırlığını koydu bir takım konferans ve makaleleri ile aşırılılığa karşı devamlı uyarılarda bulundu.
+                        
+                        1927yılında Duygu Karmaşası, Yıldızın Parladığı Anlar, Tarihsel Baş Minyatür isimli kitaplarını yayınladı. Stefan Zweig, Leo Tolstoy’un 100. Doğum yıldönümünde kutlamalara katılmak için Sovyetler Birliğine gitti.
+                        
+                        1933de Nazilerin yaktığı kitaplar içinde Yahudi kökenli Stefan Zweig’in de kitapları ’da yer alıyordu. Zweig bundan sonra ülkesini terk ederek Londra’ya yerleşmek zorunda kaldı. Burada da huzur bulamadı. 
+                        
+                        1937 yılında karısı Frederike’den ayrıldı. Tam bir sene sonra Portekize giderken yanında Lotte Altman isimli bir kadın vardı. Bu sıralarda Avusturya, Alman Reich’ katılmıştı Stefan’da İngiliz vatandaşlığına geçmek için müracaat etmişti. Daha sonra Lotte Altman ile evlendi yazar. II. Dünya savaşında İngiliz tabiiyetine girerek New York, Arjantin, Portekiz’e gitti. 
+                        
+                        Brezilyaya yerleşmeye karar veren yazar orada çok ünlü eseri Satranç Öyküsünü yayınladı.Oldukça üretken olması ile bilinen Zweig denemeler yaptı birçok konuda. Lirik şiirler yazdı, Trajedi türünde sahne eserleri, biyografi alanlarında denemeler yaptı.
+                        
+                        Biyografi alanındaki çalışmalarını Freud’a ve psikolojiye olan ilgisinden dolayı etkilenmişti. Balzac, Dickens, Dostoyevski gibi üç büyüğün biyografilerini hazırladı.
+                        
+                        Patlak veren savaş tüm dünyayı yakmaktaydı buda en çok Zweig’i üzüyordu. Büyük yazar Zweig Alman bir şair olan Kleist kendini ve eşini silahla vurarak intihar etmesinden etkilenmiş ve karısı Lotte ile bu benzerliği yaşamak ister.
+                        
+                        Zweig bunun sonucunda bir soda şişesine bol miktarda Veronal denilen zehri ilave eder ve bu şişeden üç yudum alarak eşine şişeyi uzatır şunları söyler’ Yanıma gelmek arzusundaysan eğer bunu istediğin zaman yapabilirsin der’
+                        
+                        Bunun üzerine Lotte ona son olarak ‘ beni seviyor musun’ diye sorar Zweig evet cevabını verir. Lotte şişenin tamamını içer ve eşinin yanına uzanır. Son uykularına yatarlar.
+                        
+                        Hitlere karşı nefret duyan Zweig çiftinin intiharına neden olmuş fakat tarih tekerrür ederek 3 yıl sonra Nazilerin Rusya’ya karşı yenilmesinden sonra Hitler eşi ile birlikte intihar etmiştir. </p>
+                
+                </div>
+            
+            </div>
+                </section>
+            
+
+    </div>
+
+  <!--second-page starts--> 
+
+  <section class="iki">
+    <div class="main">
+
+<img src="18aky.jpg" alt="balıkesir-il-halk-kütüphanesi">
+
+<div class="main2">
+    <h1>En Çok Satan Kitapları</h1>
+
+    <br>
+    
+</div>
+
+
+    </div>
+  </section>
+
+
+<!--FOOTER-->
+<footer>
+    <h5>Dünya Kitaplığı</h5>
+    <p class="sondanbironce">Dünya Kitaplığı, kitap alanında dünyanın en'lerini dünyanın her yerinden ekranlarınıza getiren sanat tutkunu bir internet sitesidir </p>
+    <div class="socials">
+        <a href=""><i class="fa-brands fa-meta"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p class="end">BALIKESİR'li Umut TAMTI tarafından yapılmıştır</p>
+</footer>
+
+
+
+
+</body>
+
+</html>

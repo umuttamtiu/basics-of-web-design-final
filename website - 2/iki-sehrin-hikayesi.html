@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İKİ şehrin hikayesi</title>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;          /* bunu da bilmiyorum araştır bunu */   /*murat hoca biraz anlattı ama meeehhh*/
+}
+
+.hero {
+    height: 2750px;
+    width: 100%;
+    background: rgb(56, 43, 27);
+    background-size: cover;
+    background-position: center;  
+}
+
+nav {
+    display: flex;             /*display türlerini kesinlikle araştır*/     /*flex yatayda heralde*/
+    align-items: center;          /* align items kesinlike araştır*/      /* itemleri sıralama*/
+    justify-content: space-between;   /* justify content kesinlike araştır*/
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;                                                         
+
+}
+
+.logo{
+    color: rgb(24, 158, 113);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:crosshair;                   /* (NORMALDE BU POİNTERDI)cursor nedir araştır türleri nedir araştır önemli gibi*/
+}
+
+
+/*normalde burada sadece span vardı ama ben ilerde karişmasın diye div nav span yazarak nerede olduğunu belirttim umarım doğrudur*/
+div nav span{
+    color:rgb(163, 9, 9)
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 13px;             /* font size ben ekledim normalde yoktu*/
+
+}
+nav ul li a {
+    color: bisque;
+    text-decoration:none;         /* bunu hiç yapmamayı denedim ama hiç yapmazsam altta bir çizgi oluyo hoş durmuyo none yaptığımda normal yazı oluyor yani iyi*/
+    font-weight: bold;
+    text-transform: capitalize;     /*capitalize araştır önemli gibi duruyor çok duydum*/
+
+    
+}
+nav ul li a:hover{
+    color: rgb(187, 14, 14);
+    transition: .5s;
+}
+
+.btn{
+    background-color: brown;
+    color: rgb(246, 203, 151);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    transition:.4s;                /* burası da normalde  transition: transform .4s; idi ama hiçbir etki etmediği için kaldırdım*/
+
+    /* normalde burada     border: 2px solid transparent;    kodu vardı ama ben gerekszi bulduğum için sildim*/
+}
+
+.btn:hover{
+    transform: scale(1.2);            /* anladım gibi ama sen yine de araştır tekrardan */
+}
+
+.main{
+    
+    width: 70%;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 225px;
+    
+}
+
+.main h1{
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px bisque;
+    margin-bottom: 20px;
+    color: rgb(101, 96, 96);
+}
+
+.main h3{
+    font-size: 37px;
+    text-decoration: none;
+    margin-bottom: 45px;
+    color: bisque;
+}
+
+.main p{
+    text-align: left;
+    font-size: 24px;
+    color: rgb(222, 207, 189);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main img{
+    height: 400px;
+    width: 340px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ozet{
+
+    width: 80%;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 125px;
+    background: rgb(94, 83, 83);
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 6px solid bisque;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <!--hero section starts-->
+    <div class="hero">
+        
+        <nav>
+            
+            <h2 class="logo">DÜNYA <span>KİTAPLIĞI</span></h2>
+           
+            <ul>
+                <li><a href="index99.html">ANASAYFA</a></li>
+                <li><a href="kütüphaneler-page.html">KÜTÜPHANELER</a></li>
+                <li><a href="kitaplar.html">KİTAPLAR</a></li>
+                <li><a href="yazarlar.html">YAZARLAR</a></li>                         <!-- bir navbar ekle ve alta kyamsını sağlagaliba stick ile yapacaksın onu -->
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="iletişim.html">İLETİŞİM</a></li>
+            </ul>
+          
+            <a href="bize-katil.html" class="btn">BİZE KATIL</a>
+            
+        </nav>
+
+    <div class="main">
+    <h1>İKİ ŞEHRİN HİKAYESİ</h1>
+    <h3>Charles DİCKENS</h3>
+    <p>İki Şehrin Hikâyesi, Charles Dickens'ın 1859 yılında gazetelerde tefrika edilmek üzere yazdığı, konusu Fransız Devrimi esnasında ve öncesinde Paris ve Londra'da geçen romandır. 200 milyonun üzerindeki satışı ile tüm zamanların en meşhur edebiyat eserleri arasındadır.[1]
+
+        Roman devrime öncülük eden yıllar boyunca soylular tarafından ezilen Fransız köylüsünün durumunu, buna karşılık devrimin ilk yıllarında soylulara yönelik vahşeti ve Londra'daki hayat üzerinden aynı dönemdeki toplumlar arasındaki benzerlikleri betimler. Bu olaylarla birlikte birkaç karakterin hayatı da anlatılır. Charles Darnay ve Sydney Carton en önemli karakterlerdir. Darnay erdemli kişiliğine rağmen devrimin gazabına rastgele kurban seçilen eski bir Fransız aristokrattır. Carton ise Darnay'in eşine duyduğu karşılıksız aşk dışında boşa geçirdiği hayatını kurtarmak için çabalayan harcanmış bir avukattır. 45 bölümlük roman Dickens'ın All the Year Round isimli edebiyat dergisinde 31 haftada yayınlandı.</p>
+       
+       <img src="Tales_serial.jpg" alt="iki">
+        <p>
+        Konusu
+        Kitapta suçsuz yere Paris'teki bir hapishanede 18 yılını geçirdikten sonra, eski bir dostunun yardımı ile kurtulan Dr. Manette'in tesadüfen Londra'ya dönüşü sırasında tanıştıkları bir Fransız olan Charles Darnay ile kızının yapacakları evlilik ve bunun ardından meydana gelen Fransız İhtilali'nin hayatlarına etkileri anlatılır. Bu insanların ruhsal değişimlerini ele alan kitapta birçok tarihi izlere de rastlayabiliriz.
+        
+        Olayların akışı ve birbirleri ile bağlantıları romanda okuyucunun merakını son sayfaya kadar sürükleyen bir hızla sürer. Manette'in kızının sevgisine verdiği değer yüzünden içine atıp gömdüğü ancak unutamadığı intikam hisleri, kendisini bu duruma düşüren insanların soyundan gelen birisine kızını verebilmesi ilgi çekicidir. Buna karşın, hayatta kimseye karşı iyilik yapamamış ve bunun yüzünden hayatla bağları çok sıkı olmayan Sydney Carton'un Darnay'a duyduğu imrenme ve Lucie'ye duyduğu sevgi romanda olayların akışını değiştirir.
+        
+        Charles Dickens bu romanı yazdığı sırada tıpkı Charles Darnay'ın evliliğindeki gibi sorunlar içindedir ve karakterle isimlerinin aynı harflerle C.D. başlaması bununla ilişkilendirilir. Bu roman da insanların kendilerine duydukları güven güvensizlik anlatılıyor.[kaynak belirtilmeli]
+        
+        Etkileri
+        Yazar, Fransız İhtilali'nde, ortalığı kan gölüne çeviren monarşi kurallarının dayattığı ve artık o dönemin bir rutini olan giyotinle kafa kesmelerde öldürülen binlerce insanın acısını İngiliz halkına anlatmayı amaçlamıştır.[kaynak belirtilmeli] Romanda ihtilal öncesinde acı çeken, sömürülen Fransız halkının bu travmanın yaraları ile, kendilerine yıllarca kötülük eden aristokrat ve asillere sıfır hoşgörü ve uydurma yasalarla idam cezaları vermeleri ile aslında evrimleşmemiş ve ilkel kalmış bir toplum oldukları anlatılmak istenmiştir. Devrim ertesinde yaşanan üç yıl, devrim öncesinin bir devamı niteliğindedir. Öldürenler artık öldürülmektedir.</p>
+    <div>
+
+
+
+
+        <div class="ozet">
+
+<h2>İKİ ŞEHRİN HİKAYESİ - Genel Özet</h2>
+<p>Dr. Manetta Paris’te bir hapishanede aristokratlar yüzünden suçsuz yere 18 yıl yatar. Bu yüzden akli dengesi bozulur. Londra’da yaşamakta olan kızı Lucia, eski bir aile dostuyla Paris’e gider ve orada babasının hayatta olduğunu öğrenir. Birlikte Londra’ya dönerler. Bir süre sonra Fransa’da yaşayan aristokrat bir ailenin oğlu olan Charles Darney ile tanışırlar.
+
+    Aristokratlardan nefret eden Darney, Lucia’ya âşık olur ve onunla evlenir. Kızları altı yaşına geldiğinde Fransa’da ihtilal başlar, ihtilalciler Darney’in ailesini cezalandırırlar. Aileden sadece Darney hayatta kalır. Darney, ailesinin zarar verdiği kişilere ailesi adına tazminat vermek üzere Paris’e gider. Ancak aristokrat olduğu gerekçesiyle tutuklanır. Haber ingiltere’ye ulaşır ulaşmaz Dr. Manetta ve Lucia Damey’i kurtarmak için Paris’e gelirler.
+    
+    
+    İhtilalciler Darney’in ailesine karşı aşırı bir nefret duyarlar. Darney mahkemeye çıkarılmadan bir buçuk yıl hapis kalır. Bu arada karısıyla bile görüştürülmez. Sonunda yargılanır ve halkın saygı duyduğu Dr. Manetta’nın damadı lehine tanıklığı sayesinde serbest kalır. Fakat Paris’ten çıkmasına izin verilmez. Bir süre sonra yeniden tutuklanır.
+    
+    Dr. Manetta’nın en yakın dostları Defargeler, Damey’i halk düşmanı ilan etmiştir. Darney idama mahkûm edilir. Lucia’yı derin bir aşkla seven Avukat Carton, Lucia’yı mutlu etmek için Darney’i hücresinde ziyaret eder. Darney’le birbirlerine çok benzemektedirler. Kıyafetlerini değiştirirler ve Avukat Carton, Darney’in yerine giyotine gider. Darney, Lucia ve kızını alarak Paris’ten kaçar.</p>
+
+        </div>
+
+
+
+
+
+
+</body>
+</html>

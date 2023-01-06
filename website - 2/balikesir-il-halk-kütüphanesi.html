@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balıkesir-il-halk-kütüphanesi</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--buraya css i internal olarak ekle-->
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;  
+    background-color: #3a250bb2;       /* bu nokta çoook önemli normalde burada backgrpund color yok ama ben biraz değiştirmek istedim ve en alt kısma margin ekledim biraz ve kenarlardan boşluk bıraktım sonra boşlukları renkli yapmak için de nuradan background color yaptıım byee*/
+   
+}
+
+
+
+
+.hero{
+    width: 100%; 
+    
+}
+
+nav{
+    
+    display: flex;             /*display türlerini kesinlikle araştır*/     
+    align-items: center;          /* align items kesinlike araştır*/      /* itemleri sıralama*/
+    justify-content: space-between;   /* justify content kesinlike araştır*/
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;                                                         
+
+}
+
+.logo{
+    color: rgb(24, 158, 113);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:crosshair;                   
+}
+
+
+/*normalde burada sadece span vardı ama ben ilerde karişmasın diye div nav span yazarak nerede olduğunu belirttim umarım doğrudur*/
+div nav span{
+    color:rgb(163, 9, 9)
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 13px;             /* font size ben ekledim normalde yoktu*/
+
+}
+nav ul li a {
+    color: bisque;
+    text-decoration:none;         /* bunu hiç yapmamayı denedim ama hiç yapmazsam altta bir çizgi oluyo hoş durmuyo none yaptığımda normal yazı oluyor yani iyi*/
+    font-weight: bold;
+    text-transform: capitalize;     /*capitalize araştır önemli gibi duruyor çok duydum*/
+
+    
+}
+nav ul li a:hover{
+    color: rgb(187, 14, 14);
+    transition: .5s;
+}
+
+.btn{
+    background-color: brown;
+    color: rgb(246, 203, 151);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    transition:.4s;                /* burası da normalde  transition: transform .4s; idi ama hiçbir etki etmediği için kaldırdım*/
+
+    /* normalde burada     border: 2px solid transparent;    kodu vardı ama ben gerekszi bulduğum için sildim*/
+}
+
+.btn:hover{
+    transform: scale(1.2);            /* anladım gibi ama sen yine de araştır tekrardan */
+}
+
+
+
+.bir{
+    width:100%;
+    padding: 145px 0px;                            /*  birinci sayı üstten ikinci sayı soldan*/
+    
+}
+
+.bir img{
+    border-radius: 65px;
+    height: auto;                                   /* BURAADA KENDİ KENDİME ÇOK ÖNEMLİ BİR BİLİGİ ÖĞRENDİM BİRİNİ AUTO YAPIP BİRİİNİ KENDİN SEÇERSEN RESİM BOZULMADAN BİRİNE GÖRE BÜYÜYOR*/
+    width: 550px; 
+} 
+
+.about-text li span{
+    font-size: 25px;
+    color: bisque;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bir .main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;                   /* BURASI DA ÇOK KARIŞTOOO */ 
+
+}
+
+.bir .about-text h2{
+color: rgb(195, 165, 128);
+font-size: 75px;
+text-transform: capitalize;    
+margin-bottom: 30px;                       /* TEXT TRANSFORM DA LOWERCASE TÜM YAZI KÜÇÜK HARF , UPPERCASE TÜM YAZI BÜYÜK HARF ,CAPİTALİZE SADECE BAŞI BÜYÜK DİĞERLEİ KÜÇÜK */
+
+}
+
+.about-text h4{
+    color:  rgb(163, 9, 9);
+    background-color: rgb(24, 158, 113);
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px; 
+    color: bisque;
+}
+
+.bir .about-text h2 span{
+    color: rgb(202, 5, 5);
+}
+
+
+.bir .about-text h5{
+    color: rgb(179, 174, 168);
+    font-size: 23px;
+    text-transform: capitalize;    
+    margin-bottom: 20px;                      
+    }
+
+
+.iki .main{
+    
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;  
+    background-color: bisque;                 /* BURASI DA ÇOK KARIŞTOOO */ 
+
+}
+
+.iki .main img{
+    width: 400px;
+    height: auto;
+    border-radius: 300px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+.main2 h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.main2 p{
+    color: rgba(0, 0, 0, 0.518);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.main2{
+    margin-right: 30px;
+}
+
+.haritam{
+   
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 20px 80px;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(113, 102, 89);                /* BURASI DA ÇOK KARIŞTOOO */ 
+    border-radius: 40px;
+}
+
+.haritam h1{
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(56, 15, 15);
+}
+
+
+.haritam .haritamm{
+    border-radius: 50px;
+}
+
+.about-text h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(232, 211, 183);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+    <!--hero section starts-->
+    <div class="hero">
+        
+        <nav class="menu">
+            
+            <h2 class="logo">DÜNYA <span>KİTAPLIĞI</span></h2>
+           
+            <ul>
+                <li><a href="index99.html">ANASAYFA</a></li>
+                <li><a href="kütüphaneler-page.html">KÜTÜPHANELER</a></li>
+                <li><a href="kitaplar.html">KİTAPLAR</a></li>
+                <li><a href="yazarlar.html">YAZARLAR</a></li>                         <!-- bir navbar ekle ve alta kyamsını sağlagaliba stick ile yapacaksın onu -->
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="iletişim.html">İLETİŞİM</a></li>
+            </ul>
+          
+            <a href="bize-katil.html" class="btn">BİZE KATIL</a>
+            
+        </nav>
+
+
+        <section class="bir">
+            <div class="main">
+                <div class="about-text"> 
+                    <h2>BALIKESİR İL HALK KÜTÜPHANESİ</h2>
+                    <H3>(DÜNYANIN SEKİZİNCİ HARİKASI)</H3>
+                        <Hr>
+                        <Br>
+                
+                    <h4>BALIKESİR İL HALK KÜTÜPHANESİ TARİHÇESİ</h4>
+                    <p> Balıkesir İl Halk Kütüphanesi, 1901 yılında o dönemin Karesi Sancağı Mutasarrıfı Ömer Âli Bey tarafından kurulmuş ve Anafartalar Caddesi eski belediye binası (Şimdiki Kuvâ-yı Milliye Müzesi) bitişiğindeki Hacı Ali Camii avlusunda, o zamanın medrese odalarından birisinde, birkaç dolaplık küçük bir kütüphane olarak faaliyete geçmiştir. Zamanla mevcut kitaplar okuyucuların büyük ilgisi nedeniyle ihtiyaca cevap vermemeye başlamış; bu durum karşısında Ömer Ali Bey, kütüphane için müstakil bir bina yaptırmak ve daha fazla sayıda kitap temin etmek amacıyla, şehrin ileri gelenleriyle görüşmüş ve yapılan çalışmalar sonunda kütüphane, Anafartalar Caddesi Hacı Ali Cami avlusunda bulunan günümüzde de Yeşilay Derneği Hamidiye Kütüphanesi adını taşıyan binada okuyuculara hizmet vermeye başlamıştır.
+                         
+                        Mutasarrıf Ömer Âli Bey tarafından, 105 yıl önce dönemin Osmanlı Padişahı Sultan II.Abdülhamid Han’dan izin alınmak suretiyle, “Hamidiye  Kütüphanesi” adı ile kurulan kütüphane, 1908 yılından itibaren “Maarif  Kütüphanesi”  ve 1922 yılından itibaren de “Vatan  Kütüphanesi” adlarıyla anılmıştır.Kütüphanenin adı, VII. Milli Eğitim Şûrâsı kararlarına dayanılarak, 01 Haziran 1962 gün ve 262.1-3165 sayılı emirle de “İl Halk Kütüphanesi Müdürlüğü” olarak değiştirilmiştir. Kütüphane son olarak 02 Şubat 2009 tarihli ve 601-20634 sayılı Makam Onayı ile "Mutasarrıf Ömer Âli Bey İl Halk Kütüphanesi" adını almıştır. 26.09.2011 tarih ve 28037 sayılı Resmi Gazete’de yayımlanarak yürülüğe giren ve 01.08.2011 tarih ve 2011/2132 sayılı Bakanlar Kurulu Kararıyla kurulan, Balıkesir Mutasarrıf Ömer Âli Bey Yazma Eserler Kütüphanesi Müdürlüğü ile aynı adı taşıması karışılığa neden olduğundan, Bakanlık Makamı’nın 25.09.2012 tarihli ve 205735 sayılı Onayı ile “Mutasarrıf Ömer Âli Bey” ismi kaldırılarak Balıkesir İl Halk Kütüphanesi Müdürlüğü adını almıştır.
+                        İl Halk Kütüphanesi, daha sonra İl Özel İdare Müdürlüğü’ne ait Anafartalar caddesi üzerindeki binada 1938 yılından itibaren hizmet vermekte iken, kütüphane binası yerine iş hanı yapılacağından, 08 Temmuz 1987 tarihinde İl Özel İdare Müdürlüğü Hizmet Binası kompleksinde  bulunan  (Yeni Özel İdare binasının bulunduğu yer), daha önceleri Karesi Vergi Dairesi olarak kullanılan bölüme taşınmıştır. 15 Ocak 1988 tarihinden, 08 Ocak 1994 tarihine kadar okuyucularına bu binada hizmet veren kütüphane, Eski Kuyumcular Mahallesi, Salih Tozan Caddesi’ndeki hizmet binasının da İl Genel Meclisi’nce İl Özel İdare Müdürlüğü İş Merkezi ve Hizmet Binası (ÖZ MERKEZ) olarak yapılmak üzere yıkılmasına karar verilmesi üzerine, 08 Ocak 1994 tarihinden itibaren boşaltılmış ve geçici olarak kütüphaneye tahsis edilen, Bahçelievler Mahallesi Kıralı Sokak’ta bulunan mülkiyeti Balıkesir Belediyesi ‘ne ait; (64) m2 ve (l52) m2  alanında iki salondan oluşan yeni hizmet binasına taşınmıştır.
+                         
+                        Bugüne kadar dört değişik binada hizmet veren Balıkesir İl Halk Kütüphanesi Özelleştirme Yüksek Kurulu'nun 07.04.2009 tarih ve 2004/26 sayılı kararı ile, Dinkçiler Mahallesinde bulunan TEKEL Yaprak Tütün İşletme Müdürlüğü Hizmet Binası'nın, İl Halk Kütüphanesi olarak kullanılmak üzere Bakanlığımıza tahsis edilmesi üzerine, gerekli onarım ve değişiklikler tamamlandıktan sonra bu binaya taşınmıştır. Yeni hizmet binasının resmi açılış töreni 04.04.2008 tarihinde yapılmıştır.
+                        
+                        Bütün bu bina değişikliklerinden sonra Balıkesir’e yeni bir kütüphane binası kazandırmak amacıyla yapılan çalışmalar sonrasında 14.06.2017 tarihinden itibaren geçici olarak Kasaplar Mahallesi Bigadiç Cadddesi Akyar Sokak No:1/4’te bulunan Sağlık Bakanlığı’na bağlı eski diyaliz merkezinde hizmet vermeye başlamıştır.
+                        </p>
+                
+                </div>
+            
+            </div>
+                </section>
+            
+
+    </div>
+
+  <!--second-page starts--> 
+
+  <section class="iki">
+    <div class="main">
+
+<img src="bKY.jpg" alt="balıkesir-il-halk-kütüphanesi">
+
+<div class="main2">
+    <h1>DÜNYANIN KİTAP MERKEZİ</h1>
+    <p>Balıkesir İl Halk Kütüphanesi, Kültür ve Turizm Bakanlığınca yayınlanan 2006 Yılı Kültür Envanterindeki verilere göre “Mevcut kitap sayısı açısından”, 21 Haziran 1934 tarih ve 2527 Sayılı Basma Yazı ve Resimleri Derleme Kanunu” gereğince derleme nüshası alan Ankara Adnan Ötüken İl Halk Kütüphanesi’nden sonra 72.236 adet kitap ile, 81 İl Halk Kütüphanesi arasında 2. sırada gelmektedir.
+        Yine 2006 Yılı Kültür Envanteri verilerine göre “İl Geneli” hesap edilerek yapılan sıralamada, Balıkesir İli 347.003 adet kitapla 81 İl arasında; İstanbul, Ankara, Konya, Nevşehir, Isparta ve İzmir İllerinden sonra 7.nci sırayı almıştır.</p>
+
+</div>
+
+
+    </div>
+  </section>
+
+  <div class="haritam">
+    <h1>NASIL GİDERİZ , <br>DÜNYANIN MERKEZ KÜTÜPHANESİNE?</h1>
+    <iframe class="haritamm" src="https://www.google.com/maps/d/u/0/embed?mid=1byA0qXJwka9DirOka83ZAINpAvJh1cY&ehbc=2E312F" width="640" height="480"></iframe>
+
+    
+  </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOBBİT</title>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;          /* bunu da bilmiyorum araştır bunu */   /*murat hoca biraz anlattı ama meeehhh*/
+}
+
+.hero {
+    height: 3100px;
+    width: 100%;
+    background: rgb(69, 55, 39);
+    background-size: cover;
+    background-position: center;  
+}
+
+nav {
+    display: flex;             /*display türlerini kesinlikle araştır*/     /*flex yatayda heralde*/
+    align-items: center;          /* align items kesinlike araştır*/      /* itemleri sıralama*/
+    justify-content: space-between;   /* justify content kesinlike araştır*/
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;                                                         
+
+}
+
+.logo{
+    color: rgb(24, 158, 113);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:crosshair;                   /* (NORMALDE BU POİNTERDI)cursor nedir araştır türleri nedir araştır önemli gibi*/
+}
+
+
+/*normalde burada sadece span vardı ama ben ilerde karişmasın diye div nav span yazarak nerede olduğunu belirttim umarım doğrudur*/
+div nav span{
+    color:rgb(163, 9, 9)
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 13px;             /* font size ben ekledim normalde yoktu*/
+
+}
+nav ul li a {
+    color: bisque;
+    text-decoration:none;         /* bunu hiç yapmamayı denedim ama hiç yapmazsam altta bir çizgi oluyo hoş durmuyo none yaptığımda normal yazı oluyor yani iyi*/
+    font-weight: bold;
+    text-transform: capitalize;     /*capitalize araştır önemli gibi duruyor çok duydum*/
+
+    
+}
+nav ul li a:hover{
+    color: rgb(187, 14, 14);
+    transition: .5s;
+}
+
+.btn{
+    background-color: brown;
+    color: rgb(246, 203, 151);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    transition:.4s;                /* burası da normalde  transition: transform .4s; idi ama hiçbir etki etmediği için kaldırdım*/
+
+    /* normalde burada     border: 2px solid transparent;    kodu vardı ama ben gerekszi bulduğum için sildim*/
+}
+
+.btn:hover{
+    transform: scale(1.2);            /* anladım gibi ama sen yine de araştır tekrardan */
+}
+
+.main{
+    
+    width: 70%;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 225px;
+    
+}
+
+.main h1{
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px bisque;
+    margin-bottom: 20px;
+    color: rgb(101, 96, 96);
+}
+
+.main h3{
+    font-size: 37px;
+    text-decoration: none;
+    margin-bottom: 45px;
+    color: bisque;
+}
+
+.main p{
+    text-align: left;
+    font-size: 24px;
+    color: rgb(222, 207, 189);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main img{
+    height: 400px;
+    width: 340px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ozet{
+
+    width: 80%;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 125px;
+    background: rgb(94, 83, 83);
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 6px solid bisque;
+}
+
+
+.son{
+    margin-top: 50px;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <!--hero section starts-->
+    <div class="hero">
+        
+        <nav>
+            
+            <h2 class="logo">DÜNYA <span>KİTAPLIĞI</span></h2>
+           
+            <ul>
+                <li><a href="index99.html">ANASAYFA</a></li>
+                <li><a href="kütüphaneler-page.html">KÜTÜPHANELER</a></li>
+                <li><a href="kitaplar.html">KİTAPLAR</a></li>
+                <li><a href="yazarlar.html">YAZARLAR</a></li>                         <!-- bir navbar ekle ve alta kyamsını sağlagaliba stick ile yapacaksın onu -->
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="iletişim.html">İLETİŞİM</a></li>
+            </ul>
+          
+            <a href="bize-katil.html" class="btn">BİZE KATIL</a>
+            
+        </nav>
+
+    <div class="main">
+    <h1>HOBBİT</h1>
+    <h3>J. R. R. Tolkien</h3>
+    <P>Hobbit (The Hobbit, 1937), İngiliz filolog ve yazar J. R. R. Tolkien'ın mitopya ve epik fantazya türlerinde yazdığı bir çocuk romanıdır.[1] İlk baskısı 21 Eylül 1937 yılında yapıldı ve dönem eleştirmenlerinden büyük övgü aldı. İngiltere'nin önemli edebiyat ödülü Carnegie Madalyası'na aday gösterildi ve New York Herald Tribune'dan en iyi kurmaca çocuk eseri ödülünü kazandı.[2] Günümüzde popülerliğini hâlâ sürdürmekte ve çocuk edebiyatının klasikleri arasında gösterilmektedir.</P>
+       
+       <img src="0000000627661-2.jpg" alt="iki">
+        <p>Konusu
+            Roman, Tolkien'ın âdeta bir külliyat[3] oluşturduğu Orta Dünya evreninde, evcimen bir hobbit olan Bilbo Baggins'in Smaug adındaki ejderhanın Erebor'da sahiplendiği hazineden bir pay alma çabasıyla çıktığı yolculuğa ve sonrasında gelişen olaylara odaklanır. Gandalf ve on üç cücenin beklenmedik ziyareti sonrasında başlayan Bilbo'nun yolculuğu onu tasasız yaşadığı kırsaldan çıkararak, uğursuz denebilecek bölgelere götürür. Olay örgüsü bölümler halinde anlatılır ve çoğu bölüm Tolkien'in coğrafyasındaki yaratıkları tanımlama çabasıyla ilerler. Tolkien'ın daha sonra yazacağı Yüzüklerin Efendisi üçlemesinde Orta Dünya'nın kaderini değiştirecek ve yıllardır kayıp olan Tek Yüzük'ün yeniden bulunuşunu da içerir. Daha sonra yine üçleme içerisinde yer alacak elf kılıcı Sting, cüce zırhı Mithril gibi Orta Dünya'ya özgü nesneler de bu roman içerisinde anlatılır. Bilbo, kendi doğasının adı kötüye çıkmış, kaprisli, romantik ve aynı zamanda serüvenci yanlarını kabul ederek, zekâ ve sağduyusuyla bir çeşit olgunluk ve bilgeliğe ulaşır. Olay örgüsü önceki bölümlerde adı geçen karakter ve yaratıkların çoğunun Beş Ordular Savaşı'na dahil olmasıyla doruğa ulaşır.[1]</p>
+
+            <p class="son">Beş Ordular Muharebesi
+                Beş Ordular Muharebesi, J. R. R. Tolkien'in Hobbit eserinde geçen; Elf'ler, Cüce'ler ve İnsanların, Goblin'ler ve Ork'lara karşı Erebor'un hazinesini ele geçirmek için yaptıkları savaştır.
+                
+                Yalnız dağa hükmeden Smaug, Thorin ve kafilesinin dağa girmesi ve Bilbo Baggins'in kendisiyle konuşmasından sonra sinirlenip Gölkent (Esgaroth)'e saldırmış, bu sırada okçu ozan Bard, Smaug'u hassas noktasından bir kara ok ile vurmuş ve helak etmiştir. Smaug'un ölüm haberi her tarafa yayılmış ve bunun sonucunda feci bir savaş olmuştur. Smaug'un ölümü duyulunca en başta Gölkent'teki insanlar, elfler ve Demir Dağlar'dan gelen cüceler, anlaşmazlık haline düşmüşler ve tam o sırada warglar ve goblinlerin geldiği görülünce insanlar, elfler ve cüceler,warglar ve goblinlere karşı savaşmıştır.Thorin Meşekalkan ve kafilesi de dağdan çıkıp savaşa katılmışlardır. Bu sırada Thorin'i gören düşmanlar ona yüklenmiş ve yeğenleri Fili ile Kili Thorin'i korumaya çalışırken ölmüşlerdir. Bir derideğiştiren olan Beorn'da bu savaşta yer almıştır ve goblin lideri Bolg'u katletmiştir. Savaşta en önemli rollerden birini de Kartallar oynamıştır. Savaşın sonucunda goblinler yenilip bozguna uğramışlardır. Thorin ise savaşta aldığı ağır yaralar yüzünden daha sonra ölmüştür. Savaştan galip çıkan insanlar, elfler ve cüceler aralarında anlaşıp hazineyi paylaşmışlardır. Yalnız Dağ'ın kralı Thorin'in kuzeni Dain Demirayak olmuştur ve elfler ile cüceler arasında barış sağlanmıştır ve uzun yıllar bu civarda huzurlu günler hüküm sürmüştür. Thorin Meşekalkan, kılıcı Orcrist ve Arkentaşı ile birlikte Erebor'un altına gömülmüştür.</p>
+    <div>
+
+
+
+
+        <div class="ozet">
+
+<h2>HOBBİT - Genel Özet</h2>
+<p>Hobbitler Orta Dünya’da yaşayan küçük fantastik yaratıklar. Günün birinde başkarakter BILBO BAGGINS’i büyük büyücü GANDALF ve 13 cüce ziyaret ediyor. Hazinelerini ejderha SMAUG’dan geri almak için BILBO’dan yardım istiyorlar ve ona hazineden 14’te 1 pay teklif ediyorlar. BILBO, epey korkmasına rağmen bu maceraya katılmayı kabul ediyor.
+
+    Önce Orta Dünya’nn bir ucundan diğerine seyahat etmeleri gerekiyor ve bu sırada birden Orklar tarafından esir almıyorlar. Kaçış sırasında BILBO yolunu kaybediyor, ama neyse ki bir mağaradan geçerken onu görünmez kılan bir yüzük buluyor. Yüzük aslında kötücül, iğrenç yaratık GOLLUM’a ait. Yaratık, yüzüğü kaybettiği için epey öfkelenmiş durumda, ama BILBO kendini ve yüzüğü GOLLUM’dan kurtarmayı başarıyor. Sonra diğerlerine rastlıyor, böylece seyahat devam edebiliyor.
+    
+    Ne yazık ki GANDALF kısa bir süre sonra veda ediyor (başka randevular). Bunun hemen ardından, cüceler ve Hobbitlerden oluşan yolcu grubu bu kez de orman Elfleri tarafından yakalanıyor. Ama BILBO yüzükle ve bazı numaralarla hepsini kurtarıyor ve böylece hedeflerine varıyorlar. Cücelerin eskiden yaşadığı Erebor Dağı’na kötü ejderha SMAUG yerleşmiş durumda. BILBO etrafı kolaçan ediyor, ejderha tarafından fark ediliyor, ama ejderha onu yakalayamıyor ve bunun yerine yakındaki Esgaroth şehrini yerle bir ediyor. Fakat sonra bir okçu tarafından vuruluyor, çünkü okçu BILBO sayesinde ejderhanın ya-ralanabilen tek noktasını öğreniyor.
+    
+    Ardından hazine için şiddetli bir kavga başlıyor. Yıkılan şehrin halkı tazminat istiyor, cüceler buranın kendilerine ait olduğunu söyleyerek direniyor. Büyük çatışmaya ramak kala, GANDALF geçerken uğruyor ve herkesi Orkların yaklaşmakta olan ordusuna karşı uyarıyor. Kavga edenler birden müttefik olup Orkları yeniyor.</p>
+        </div>
+
+
+
+
+
+
+</body>
+</html>

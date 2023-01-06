@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İKİ şehrin hikayesi</title>
+
+<style>
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;          /* bunu da bilmiyorum araştır bunu */   /*murat hoca biraz anlattı ama meeehhh*/
+}
+
+.hero {
+    height: 3900px;
+    width: 100%;
+    background: rgb(63, 50, 34);
+    background-size: cover;
+    background-position: center;  
+}
+
+nav {
+    display: flex;             /*display türlerini kesinlikle araştır*/     /*flex yatayda heralde*/
+    align-items: center;          /* align items kesinlike araştır*/      /* itemleri sıralama*/
+    justify-content: space-between;   /* justify content kesinlike araştır*/
+    padding-top: 45px;
+    padding-left: 5%;
+    padding-right: 5%;                                                         
+
+}
+
+.logo{
+    color: rgb(24, 158, 113);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:crosshair;                   /* (NORMALDE BU POİNTERDI)cursor nedir araştır türleri nedir araştır önemli gibi*/
+}
+
+
+/*normalde burada sadece span vardı ama ben ilerde karişmasın diye div nav span yazarak nerede olduğunu belirttim umarım doğrudur*/
+div nav span{
+    color:rgb(163, 9, 9)
+}
+
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 13px;             /* font size ben ekledim normalde yoktu*/
+
+}
+nav ul li a {
+    color: bisque;
+    text-decoration:none;         /* bunu hiç yapmamayı denedim ama hiç yapmazsam altta bir çizgi oluyo hoş durmuyo none yaptığımda normal yazı oluyor yani iyi*/
+    font-weight: bold;
+    text-transform: capitalize;     /*capitalize araştır önemli gibi duruyor çok duydum*/
+
+    
+}
+nav ul li a:hover{
+    color: rgb(187, 14, 14);
+    transition: .5s;
+}
+
+.btn{
+    background-color: brown;
+    color: rgb(246, 203, 151);
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 35px;
+    transition:.4s;                /* burası da normalde  transition: transform .4s; idi ama hiçbir etki etmediği için kaldırdım*/
+
+    /* normalde burada     border: 2px solid transparent;    kodu vardı ama ben gerekszi bulduğum için sildim*/
+}
+
+.btn:hover{
+    transform: scale(1.2);            /* anladım gibi ama sen yine de araştır tekrardan */
+}
+
+.main{
+    
+    width: 70%;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 225px;
+    
+}
+
+.main h1{
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px bisque;
+    margin-bottom: 20px;
+    color: rgb(101, 96, 96);
+}
+
+.main h3{
+    font-size: 37px;
+    text-decoration: none;
+    margin-bottom: 45px;
+    color: bisque;
+}
+
+.main p{
+    text-align: left;
+    font-size: 24px;
+    color: rgb(222, 207, 189);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main img{
+    height: 400px;
+    width: 340px;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ozet{
+
+    width: 80%;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 125px;
+    background: rgb(94, 83, 83);
+    padding: 30px 50px;
+    border-radius: 20px;
+    border: 6px solid bisque;
+}
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <!--hero section starts-->
+    <div class="hero">
+        
+        <nav>
+            
+            <h2 class="logo">DÜNYA <span>KİTAPLIĞI</span></h2>
+           
+            <ul>
+                <li><a href="index99.html">ANASAYFA</a></li>
+                <li><a href="kütüphaneler-page.html">KÜTÜPHANELER</a></li>
+                <li><a href="kitaplar.html">KİTAPLAR</a></li>
+                <li><a href="yazarlar.html">YAZARLAR</a></li>                         <!-- bir navbar ekle ve alta kyamsını sağlagaliba stick ile yapacaksın onu -->
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="iletişim.html">İLETİŞİM</a></li>
+            </ul>
+          
+            <a href="bize-katil.html" class="btn">BİZE KATIL</a>
+            
+        </nav>
+
+    <div class="main">
+    <h1>YÜZÜKLERİN EFENDİSİ</h1>
+    <h3>J. R. R. Tolkien</h3>
+    <p>Yüzüklerin Efendisi (İng. The Lord of the Rings), İngiliz filolojist ve Oxford Üniversitesi profesörü J. R. R. Tolkien'in yazdığı epik fantezi türündeki romandır. Hikâye, Tolkien'in çocuklar için yazdığı 1937 tarihli Hobbit'in devamı olarak başlamıştı ancak sonunda ondan çok daha büyük bir eser haline geldi. Çoğu II. Dünya Savaşı'nda olmak üzere 1937 ve 1949 yılları arasında aşamalar halinde yazıldı. 150 milyonun üstündeki satış sayısıyla tüm zamanların en çok satan ikinci romanıdır.
+
+        Romanın ismi bütün Orta Dünya'yı fethedip hakimiyetine almakta kullandığı diğer Güç yüzükleri'ne hükmeden Tek Yüzük'ü ilk çağlarda yaratan, hikâyenin kötü karakterlerinden biri olan Lord Sauron'u kasteder.[not 1] İngiliz kırsalından pek de farklı olmayan Hobbit diyarı Shire'da sakince başlayan hikâye, Orta Dünya'nın kuzeybatısına kadar uzanırken Hobbitler; Frodo, Sam, Merry ve Pippin'in yanı sıra Hobbitlerin müttefikleri ve yol arkadaşları olan Kuzey Kolcusu Aragorn, Gondor kumandanı Boromir, savaşçı Cüce Gimli, Elf prensi Legolas ve büyücü Gandalf'ın gözünden Yüzük Savaşı'nın gidişatı takip edilir.
+           </p>
+       
+       <img src="094-2.jpg" alt="iki">
+        <p>
+            En başında Tolkien tarafından eserin Silmarillion ile birlikte iki ciltlik bir set oluşturması amaçlanıyordu ama yayıncı bu fikri reddetti. Ekonomik sebeplerden dolayı Yüzüklerin Efendisi 29 Temmuz 1954'ten, 20 Ekim 1955'e kadarki bir yıllık süreç içerisinde üç cilt olarak yayımlandı. Bu üç cilt Yüzük Kardeşliği, İki Kule ve Kralın Dönüşü olarak isimlendirildi. Roman yapı olarak üçüncü cildin sonunda dahil olduğu çeşitli bölümlerden, arka plan malzemeleriyle birlikte ikişer bölümden altı kitaba bölünmüş haldedir. Bazı baskılarda tüm roman tek bir cilt haline getirilmiştir. Yüzüklerin Efendisi defalarca yeniden basıldı ve birçok dile çevrildi.
+
+            Tolkien'in eseri temaları ve kökenleri hakkında yapılan kapsamlı araştırmalara konu oldu. Kendi içerisinde büyük bir eser olsa da hikâye, aslında Tolkien'in 1917'den beri kendisinin "mythopoeia" olarak tanımladığı bir süreç içerisinde üstünde çalıştığı büyük bir destanın yalnızca son halkasıydı. Filolojinin, mitolojinin, dinin, sanayileşmenin etkilerinin yazarda yarattığı tiksinmenin yanı sıra daha önceki fantezi eserleri ve Tolkien'in I. Dünya Savaşı'ndaki deneyimleri yazarın ilk çalışmaları ve Yüzüklerin Efendisi'nin hikâyesi üzerinde etkili oldu. Yüzüklerin Efendisi'nin de modern fantezi edebiyatı üzerinde büyük etkisi olduğu kabul edilir. Tolkien'in çalışmalarının etkisi öyle büyük oldu ki; "Tolkienian" ve "Tolkienesque" sözcükleri Oxford İngilizce Sözlüğü'ne girdi.
+            
+            Yüzüklerin Efendisi'nin hep popüler kalması popüler kültürde göndermeler yapılmasına, Tolkien'in çalışmalarına hayran olanların topluluklar kurmasına ve Tolkien ile eserleri hakkında birçok kitap yayımlanmasına sebep oldu. Yüzüklerin Efendisi geçmişte olduğu gibi hala sanat eserleri, müzik, film, televizyon, video oyunları ve edebiyatı etkilemeye devam ediyor. Yüzüklerin Efendisi için radyo, televizyon ve birçok filmin ödüllü olan uyarlamaları yapıldı.</p>
+
+
+            <p></p>
+    <div>
+
+
+
+
+        <div class="ozet">
+
+<h2>YÜZÜKLERİN EFENDİSİ - Genel Özet</h2>
+<p>Hikâye
+    Kara Lord olarak da bilinen Sauron, kendi efendisi Melkor'un görevini tamamlamak üzere Orta Dünya'daki halkların zaaflarından yararlanıp "güç yüzüklerini" yapar.
+    
+    “	Üç yüzük göğün altında yaşayan elf krallarına,
+    Yedisi taştan saraylarındaki cüce hükümdarlara, Dokuzu ölümlü insanlara, ölecekler ne yazık; Bir yüzük gölgeler içindeki Mordor Diyarı'nda, Kara tahtında oturan Karanlıklar Efendisi'ne. Hepsine hükmedecek bir yüzük, hepsini o bulacak, Hepsini bir araya getirip, karanlıkta birbirine bağlayacak, Gölgeler içindeki Mordor Diyarı'nda.
+    
+    „
+    Güç Yüzükleri'nin sahipleri kandırıldıklarını anlamıştı fakat iş işten geçmişti.
+    
+    Elfler, Sauron'a karşı savaş açtı ve Kara Lord, Elflerle büyük bir savaşa girdi. Birçok Elf şehri yok oldu. Daha sonra Elfleri yenemeyeceğini anlayan Sauron bir süre saklandı. Sonra tekrar yüzükten aldığı güçle iyice güçlenen Sauron, çok geçmeden Orklar, Haradrim halkı, Rhûn halkı ve kötülüğün hizmetine girmeye hazır diğer halklarla, Orta Dünya'nın tek hakimi olmak için işgale başladı. Elfler ve insanlardan oluşan ve Son İttifak olarak adlandırılan bir ordu Sauron'u durdurmayı başardı. Parmağındaki tek yüzük İsildur'un eline geçti fakat güce düşkün olan insanlar yüzüğü yok etmedi. Daha sonra yüzük efendisine ihanet etti ve İsildur'un ölümüne sebep oldu. Bir nehrin içinde kayboldu. Böylece unutulmaması gereken değerler unutulup gitti.
+    
+    Aradan yüzyıllar geçti ve yüzük eski bir Hobbit olan Smeagol'un eline geçti. Sméagol yüzüğü 500 yıl boyunca dumanlı dağların derinliklerinde sakladı. Fakat Bilbo Baggins adlı Hobbit, Gollum'u yüzüğü düşürürken gördü ve onu aldı. Yıllar boyunca Mordor'daki Barad-Dûr'da gücünü yeniden toparlayan Sauron, kötülüğe hizmet eden tüm halkları yeniden birleştirerek tekrar saldırıya geçti. Sauron'un Orta Dünya'yı ele geçirmesi için ihtiyacı olan tek şey yüzüktü.Tüm bu olanların farkında olan İstari'den Gandalf, Elf temsilcisi Elrond'un ülkesinde bir meclis toplamayı başararak yüzüğün yok edilmesi gerektiğine karar verdi. Yüzüğü yok etme görevi ise Frodo Baggins adlı Hobbit'e verildi. Böylece serüven başlamış oldu.
+    
+    Hikâyenin ilerleyen bölümlerinde, Elrond, Aragorn'a Elendil'in "Narsil" adlı (sadece kralların taşıyacağı) kılıcını verir. Aragorn ona "Andúril (Batının Alevi)" ismini verir. Bilbo Frodo'ya Mithril ve Sting kılıcını verdikten sonra Charadras (Karadras) Geçidi'ne giderler. Saruman dokuz yoldaşı büyüleyerek dağa şimşek çaktırır, üstlerine çığ düşer. Frodo'ya hangi taraftan gitmeleri gerektiğini sorar. Frodo madenlerden gitmeyi seçer. Moria Madenlerine girdiklerinde Khazad-Dûm köprüsü yakınlarında Melkor'un hizmetkarı Balrog yollarını keser. İstari Büyücüsü Gandalf, Balrog'u etkisiz hale getirmesine rağmen Balrog düşerken onu da kırbacıyla çeker. Gandalf'ın Khazad-Dûm köprüsü'nden düşmesinin üzerine Aragorn grubun yeni lideri olur. Lothlorien'e doğru giderler. Kahin gözlü, büyüleyici görünüşü olan Lothlorien'in Hanımı Galadriel ile görüşürler. Galadriel'in eşi Celeborn Sam'e ip, Merry ve Pippin'e keskin bir hançer, Aragorn'a büyüleyici bir hançer, Legolas'a prenslerin soyundan gelenlerin kullandığı özel bir yay, Frodo'ya ise Galadriel aynasını gösterir. Altın saçlarından bir tel isteyen Gimli'ye ise üç tel altın saç verir. Nehirlerin kıyısına varınca Boromir, yüzüğü Frodo'dan almak ister fakat alamaz.Yüzük onu zapt ettikten sonra Boromir keşke olanları değiştirseydim der fakat Aragorn, onun yerine Frodo'yu Mordor'a yollar. Mordor yoluna doğru giden Frodo'nun peşine Sam takılır. Savaş ortaya çıkınca Boromir Uruk-hailar tarafından okla öldürülür. Üç Avcı (Aragorn, Gimli ve Legolas), kardeşlik bozulunca kendilerine yeni bir grup kurup Boromir'i ararlar. Kardeşlik dağılmıştır, Merry ve Pippin, Boromir'in söylediğine göre Isengard'a doğru esir alınmıştır, Sam ve Frodo, Mordor yolundadır, Üç Avcı, Merry ve Pippin'i aramak için yola çıkarlar.</p>
+        </div>
+
+
+
+
+
+
+</body>
+</html>
